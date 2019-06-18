@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="application">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- bootstrap theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script>
+        $('#datetimepicker').date("DateTimePicker").function()
+    </script>
+</head>
+<section class="content">
+    <h1 class="content__heading"></h1>
+    <p class="content__lede"></p>
+    <form class="content__form contact-form">
+        <div class="testing">
+            <p></p>
+        </div>
+        <div class="contact-form__input-group">
+            <label class="contact-form__label" for="name">Name</label>
+            <input class="contact-form__input contact-form__input--text" id="name" name="name" type="text" />
+        </div>
+        <div class="contact-form__input-group">
+            <label class="contact-form__label" for="email">Surname</label>
+            <input class="contact-form__input contact-form__input--email" id="email" name="email" type="email" />
+        </div>
+        <div class="contact-form__input-group">
+            <label class="contact-form__label" for="subject">Age</label>
+            <input class="contact-form__input contact-form__input--age" id="age" name="age" type="age" />
+        </div>
+        <div class="contact-form__input-group">
+            <label class="contact-form__label" for="message">B.Date</label>
+            <input class="contact-form__input contact-form__input--date" id="date" name="date" type="date" />
+        </div>
+
+        <button class="contact-form__button" type="submit">Show</button>
+    </form>
+</section>
+<div class="results">
+    <h2 class="results__heading">ShowJSON</h2>
+    <pre class="results__display-wrapper"><code class="results__display"></code></pre>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/lib/jquery.min.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="js/lib/bootstrap.min.js"></script>
+<!-- AngularJS JavaScript -->
+<script src="js/lib/angular.min.js"></script>
+<script src="text.js"></script>
+
+</html>
